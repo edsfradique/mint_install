@@ -8,7 +8,7 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak
 echo "Substituindo o conteúdo do sources.list..."
 cat <<EOL > /etc/apt/sources.list
 # Repositórios do Mint e Debian
-deb https://mirror.ufscar.br/mint-archive faye main upstream import backport
+deb [trusted=yes] http://packages.linuxmint.com faye main upstream import backport
 deb http://debian.pop-sc.rnp.br/debian bookworm main contrib non-free non-free-firmware
 deb http://debian.pop-sc.rnp.br/debian bookworm-updates main contrib non-free non-free-firmware
 deb http://security.debian.org/ bookworm-security main contrib non-free non-free-firmware
