@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Atualizar e instalar pacotes.
 apt --install-recommends --force-yes -y install linuxmint-keyring debian-system-adjustments && \
 apt update && \
